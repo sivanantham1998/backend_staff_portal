@@ -25,6 +25,7 @@ app.use(
     methods: ["GET", "POST", "PUT", "DELETE"],
     // credentials: true,
     origin: "http://localhost:5173",
+      credentials: true  
   })
 );
 const adminRouter = require("./routers/adminRouter");
