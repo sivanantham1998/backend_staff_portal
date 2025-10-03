@@ -6,17 +6,17 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const app = express();
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config();
-}
+// if (process.env.NODE_ENV !== "production") {
+//   dotenv.config();
+// }
 
-const JWT_SECRET = process.env.JWT_SECRET;
-if (!JWT_SECRET) {
-  console.error(
-    "FATAL: JWT_SECRET is NOT set. Set it locally or in Render Environment Variables."
-  );
-  process.exit(1); // optional but recommended: fail fast so you don't run without a secret
-}
+// const JWT_SECRET = process.env.JWT_SECRET;
+// if (!JWT_SECRET) {
+//   console.error(
+//     "FATAL: JWT_SECRET is NOT set. Set it locally or in Render Environment Variables."
+//   );
+//   process.exit(1); // optional but recommended: fail fast so you don't run without a secret
+// }
 // middleware
 app.use(express.json());
 app.use(cookieParser());
