@@ -24,7 +24,7 @@ app.use(
   cors({
     methods: ["GET", "POST", "PUT", "DELETE"],
     // credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://idmtechpark-work.netlify.app",
       credentials: true  
   })
 );
